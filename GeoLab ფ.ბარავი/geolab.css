@@ -1,0 +1,876 @@
+/* Resets */
+html,body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  width: 100%;
+}
+
+html,body,header,p,h1,h2,h3,h4,ul,li {
+  margin: 0;
+  padding: 0;
+}
+  /* Navigation Bar */
+.navbarscroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.menu1 {
+  width: 40%;
+  padding-top: 20px;
+  padding-right: -80px;
+  float: right;
+}
+
+.menu1 li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-family: "bpg glaho web caps";
+}
+
+.menu1 ul li {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 21.5px;
+  padding: 14px 15px;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+  text-decoration: none;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.link:hover {
+  color: #B8EDF8;
+}
+
+#logo {
+  margin-top: -65px;
+  padding-left: 50px;
+}
+     /* Header */
+header {
+  width: 100%;
+  height: 800px;
+  background-image: url("images/header.png");
+  background-size: cover;
+}
+
+#heading {
+  position: relative;
+  top: 43%;
+  left: 27%;
+}
+
+#heading h1 {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 70px;
+  font-family: "bpg nino mkhedruli book";
+  font-weight: 900;
+}
+
+#heading h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: "bpg nino mkhedruli book";
+  font-weight: lighter;
+  display: -webkit-box;
+  padding-left: 15%;
+}
+     /* Main Section - Article 1 */
+#main-section {
+  width: 100%;
+  height: 2150px;
+  background-color: #FFFFFF;
+}
+
+#section1-heading, #section2-heading, #section3-heading, #footer-heading {
+  text-align: center;
+  font-family: "bpg glaho web caps";
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 60px;
+  padding-right: 38px;
+  display: block;
+}
+
+a.article1-heading-underline {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+a.article1-heading-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.article1-heading-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+      /* Main Section - First Section */
+.first-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-left: 160px;
+  padding-top: 70px;
+}
+
+.article1 {
+  flex: 0 0 350px;
+  border: 1px solid #B2B2B2;
+  margin: 20px;
+}
+
+.article1 img {
+  max-width: 43%;
+  height: 115px;
+  padding-top: 35px;
+  padding-left: 117.5px;
+}
+
+.article1 .text1 {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.text1 p {
+  padding-top: 25px;
+  font-family: "bpg glaho web caps";
+  color: #666666;
+  display: inline-block;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 50px;
+}
+
+.title {
+  padding-top: 60px;
+}
+
+.text1 h4 a {
+  font-family: "bpg glaho web caps";
+  color: #1A1A1A;
+  font-size: 21.5px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.text1 h4 a:hover {
+  color: #B8EDF8;
+}
+
+#bulb {
+  padding-left: 20px;
+}
+      /* Main Section - Second Section */
+#main-section2 {
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+  grid-gap: 30px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.grid-container-article {
+  position: relative;
+}
+
+.grid-container-image {
+  line-height: 0;
+  overflow: hidden;
+  border: 1px solid #B8EDF8;
+}
+
+.grid-container-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.grid-container-title {
+  font-size: 25px;
+  font-family: "bpg glaho web caps";
+  font-weight: lighter;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(192,238,246,0.75);
+  background-image: url("images/center.svg");
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container-article:hover .grid-container-title {
+  opacity: 1;
+}
+
+.grid-container-article:hover .grid-container-image img {
+  background-image: url("images/center.svg");
+  filter: blur(2px);
+}
+      
+      /* Main Section - Third Section */
+.main-section3 {
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 700px;
+}
+
+#section3-heading a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  padding-left: 215px;
+  padding-top: 40px;
+}
+
+.link2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+  text-decoration: none;
+}
+
+.link2:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.main-article3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#artist-image {
+  width: 78%;
+  height: 450px;
+  position: relative;
+  -webkit-box-shadow: 46px 46px 1px -12px rgba(184,237,248,1);
+  -moz-box-shadow: 46px 46px 1px -12px rgba(184,237,248,1);
+  box-shadow: 46px 46px 1px -12px rgba(184,237,248,1);
+}
+
+.article3-image {
+  padding-left: 183px;
+  margin-top: -40px;
+}
+
+.main-section3-text {
+  text-align: start;
+  padding-left: 177px;
+  padding-right: 60px;
+  word-spacing: 2px;
+  width: 50%;
+  font-family: "bpg nino mkhedruli book";
+  font-weight: 530;
+  line-height: 20pt;
+  color: #666666;
+  font-size: 16pt;
+  padding-top: 100px;
+  padding-left: -50px;
+}
+
+#main-section3-text2 {
+  padding-top: 30px;
+}
+  
+  /* Footer -Form */
+footer {
+  width: 100%;
+  height: 600px;
+  background-color: #B8EDF8;
+}
+
+.contact {
+  font: 95% "bpg nino mkhedruli book";
+  max-width: 800px;
+  margin: 10px auto;
+  background: #B8EDF8;
+  padding-top: 40px;
+}
+
+.contact input[type="text"],
+  .contact input[type="date"],
+  .contact input[type="datetime"],
+  .contact input[type="email"],
+  .contact input[type="number"],
+  .contact input[type="search"],
+  .contact input[type="time"],
+  .contact input[type="url"],
+  .contact textarea,
+  .contact select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #B8EDF8;
+  margin-bottom: 4%;
+  border: 2px solid #333333;
+  padding: 2%;
+  color: #333333;
+  font: 95% "bpg nino mkhedruli book";
+}
+
+.contact input[type="text"]:focus,
+  .contact input[type="date"]:focus,
+  .contact input[type="datetime"]:focus,
+  .contact input[type="email"]:focus,
+  .contact input[type="number"]:focus,
+  .contact input[type="search"]:focus,
+  .contact input[type="time"]:focus,
+  .contact input[type="url"]:focus,
+  .contact textarea:focus,
+  .contact select:focus {
+  box-shadow: 0 0 5px #fff;
+  padding: 2.5%;
+  border: 1px solid #fff;
+}
+
+.contact input[type="submit"],
+  .contact input[type="button"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 15%;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 2px solid #7EC4CE;
+  color: #7EC4CE;
+  font: 100% "bpg glaho web caps";
+  font-size: 20px;
+  font-weight: lighter;
+  float: right;
+}
+
+.contact input[type="submit"]:hover,
+  .contact input[type="button"]:hover {
+  background: #333333;
+}
+
+.contact p {
+  font-family: 100% "bpg nino mkhedruli book";
+  font-size: 17px;
+  font-weight: lighter;
+  color: #666666;
+}
+
+#footer2 {
+  width: 100%;
+  height: 100px;
+  background-color: #313332;
+}
+
+#footer2 p {
+  font-family: "bpg nino mkhedruli book";
+  font-size: 16px;
+  font-weight: lighter;
+  padding-top: 45px;
+  color: #FFFFFF;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+#footer2 img {
+  position: relative;
+  float: right;
+  padding-right: 30px;
+}
+/*ვებსაიტი დაიწერა 1920x1080 რეზოლუციაზე  */
+/* Width 1773 */
+@media only screen and (max-width: 1774px) {
+  .menu1 {
+    padding-right: 100px;
+  }
+
+  .menu1 ul {
+    width: 750px;
+  }
+
+  #section1-heading,#section2-heading,#section3-heading {
+    padding-left: 130px;
+  }
+
+  .main-section3-text {
+    width: 700px;
+  }
+
+  .main-section3-text p {
+    margin-left: -45px;
+  }
+
+  #main-section3-text2 {
+    margin-left: -45px;
+  }
+}
+/*Width 1727 */
+@media only screen and (max-width:1728px) {
+  #heading {
+    margin-left: 32px;
+  }
+
+  .article1 {
+    flex: 0 0 330px;
+  }
+
+  .article1 img {
+    margin-left: -10px;
+  }
+}
+/* Width 1647 */
+@media only screen and (max-width:1648px) {
+  .article1 {
+    flex: 0 0 300px;
+  }
+}
+/* Width 1577 */
+@media only screen and (max-width:1578px) {
+  #heading {
+    margin-left: 30px;
+  }
+
+  .article1 img {
+    margin-left: -25px;
+  }
+
+  #section1-heading {
+    margin-left: 30px;
+  }
+
+  #section2-heading {
+    margin-left: 30px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  #footer-heading {
+    margin-left: 30px;
+  }
+}
+/* Width 1527 */
+@media only screen and (max-width:1528px) {
+  .menu1 {
+    margin-right: 50px;
+  }
+
+  #heading {
+    margin-left: 60px;
+  }
+
+  #section1-heading,#section2-heading {
+    margin-right: 60px;
+  }
+
+  .article1 {
+    flex: 0 0 270px;
+  }
+
+  .article1 img {
+    margin-left: -40px;
+  }
+}
+/* Width 1407 */
+@media only screen and (max-width:1408px) {
+  .menu1 {
+    margin-right: 100px;
+  }
+
+  header {
+    background-size: 1443px;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+
+  #heading {
+    margin-left: -90px;
+    width: 1000px;
+    margin-top: -50px;
+  }
+
+  .article1 {
+    flex: 0 0 250px;
+  }
+
+  #section2-heading {
+    margin-left: 60px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1.2fr));
+  }
+
+  .main-section3-text p {
+    margin-top: -40px;
+  }
+}
+/* Width 1379 */
+@media only screen and (max-width:1380px) {
+  #section1-heading {
+    padding-left: -10px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  }
+
+  #main-section2 {
+    height: 500px;
+  }
+
+  .main-section3 {
+    height: 1000px;
+  }
+
+  #heading {
+    padding-top: 20px;
+  }
+
+  #heading h2 {
+    margin-left: 150px;
+  }
+}
+/* Width 1364 */
+@media only screen and (max-width:1365px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
+}
+
+@media only screen and (max-width:1350px) {
+  #section1-heading,#section2-heading {
+    margin-left: -50px;
+  }
+
+  .first-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-left: 250px;
+  }
+
+  .article1 {
+    flex: 0 0 380px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+  }
+
+  #artist-image {
+    width: 300px;
+    height: 350px;
+  }
+
+  .main-section3-text p {
+    margin-top: -70px;
+    font-size: 17px;
+  }
+
+  #main-section3-text2 {
+    font-size: 17px;
+  }
+
+  .article1 img {
+    margin-left: 15px;
+  }
+
+  #heading h2 {
+    margin-left: -40px;
+  }
+
+  #heading {
+    padding-top: 100px;
+  }
+}
+
+/*Menu For Mobile */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+.menuformobile {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  margin-top: px;
+}
+
+.mainInner {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.mainInner div {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+}
+
+#sidebarMenu {
+  height: 35%;
+  position: fixed;
+  left: 0;
+  width: 1024px;
+  margin-top: 50px;
+  transform: translateY(-1024px);
+  transition: transform 250ms ease-in-out;
+  background: #B8EDF8;
+  height: 500px;
+  margin-top: -160px;
+}
+
+.sidebarMenuInner {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.sidebarMenuInner li {
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 22px;
+  color: #000000;
+  font-family: "bpg glaho web caps";
+  font-weight: lighter;
+}
+
+.sidebarMenuInner li a {
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 36px;
+  right: 20px;
+  height: 22px;
+  width: 22px;
+  z-index: 99999;
+}
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.link3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #000000;
+  transition: width .3s;
+  text-decoration: none;
+}
+
+.link3:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+/* Galaxe S5 */
+@media only screen and (max-width:360px) {
+  html {
+    width: 1300px;
+  }
+
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1300px;
+  }
+
+  #sidebarMenu {
+    width: 1300px;
+  }
+
+  #heading {
+    padding-top: 20px;
+    padding-left: -50px;
+  }
+
+  #heading h1 {
+    font-size: 63px;
+    margin-left: 30px;
+  }
+
+  #heading h2 {
+    margin-left: 120px;
+  }
+
+  #section1-heading {
+    margin-left: 20px;
+  }
+
+  #main-section {
+    height: 2600px;
+  }
+
+  #main-section2 {
+    height: 900px;
+  }
+
+  a.article1-heading-underline:after {
+    width: 1300px;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .mobile-container {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width:1300px) {
+  .menu1 {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
