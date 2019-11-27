@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hackathon-main-page.css">
+    <link rel="stylesheet" href="css/hackathon-main-search-form.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul style="display: inline-block;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Last Events</a></li>
+            <li><a href="#">My Achievements</a></li>
+        </ul>
+        <div id="avatar" style="margin-left: 2%; display: inline-block; margin-left: 50%;">
+            <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+            <p style="display: inline-block;margin-left: 10px;color: #fff;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+        </div>
+         </nav>
+         <main class="main-page-search">
+     <h1>Who are you looking for?</h1>
+     <div class="s008">
+        <form>
+          <div class="inner-form">
+            <div class="basic-search">
+              <div class="input-field">
+                <input id="search" type="text" placeholder="Type Keywords" />
+                <div class="icon-wrap">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="advance-search">
+              <span class="desc">Advanced Search</span>
+              <div class="row">
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">Age</option>
+                      <option>18-21</option>
+                      <option>21-25</option>
+                      <option>25-30</option>
+                      <option>30+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">Gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">Education</option>
+                      <option>Universiy Of Georgia </option>
+                      <option>Georgian American University</option>
+                      <option>Georgian Technical University</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row second">
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">City</option>
+                      <option>Tbilisi</option>
+                      <option>Kutaisi</option>
+                      <option>Batumi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">Developer</option>
+                      <option>Front-end</option>
+                      <option>Back-end</option>
+                      <option>Game Developer</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="">Other</option>
+                      <option>Marketolog</option>
+                      <option>Economyst</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row third">
+                <div class="input-field">
+                  <div class="result-count">
+                    <span>30 </span>results</div>
+                  <div class="group-btn">
+                    <button class="btn-delete" id="delete">Reset</button>
+                    <button class="btn-search">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      </main>
+      <hr style="width: 80%;height: 1px;background: #F05837; display: table;margin-left: 0 auto;">
+      <section class="main-page-search-results">
+     <ul>
+         <li><input type="checkbox" id="cb1" />
+            <label for="cb1">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+
+         <li><input type="checkbox" id="cb2" />
+            <label for="cb2">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb3" />
+            <label for="cb3">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb4" />
+            <label for="cb4">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb5" />
+            <label for="cb5">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb6" />
+            <label for="cb6">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb7" />
+            <label for="cb7">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+         <li><input type="checkbox" id="cb8" />
+            <label for="cb8">
+            <div id="img-name-username">
+                <img src="Images/avatar.png" alt="avatar" width="80" height="80" style="display:inline-block">
+                <p style="display: inline-block;margin-left: 10px;color: #F05837;font-family: 'Alata', sans-serif;font-weight: bold;">Name/Username</p>
+            </div>
+            <hr style="width: 100%;height: 1px;background: #F05837;">
+            <div class="user-info">
+                    <ul>
+                        <li><p>Age:</p><span id="age"><p>20</p></span></li>
+                        <li><p>Gender:</p><span id="gender"><p>Male</p></span></li>
+                        <li><p>Education</p><span id="education"><p>University Of Georgia</p></span></li>
+                        <li><p>City:</p><span id="City"><p>Tbilisi</p></span></li>
+                        <li><p>Facebook:</p><span id="facebook"><p>https://www.facebook.com/filip.baravi</p></span></li>
+                    </ul>
+        
+                </div>
+                </label>
+         </li>
+
+        
+     </ul>
+     <hr style="width: 100%;height: 1px;background: #F05837;">
+      </section>
+      <div class="form-group">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Confirm" />
+        </div>
+</body>
+<script src="js/choices.js"></script>
+<script>
+  const customSelects = document.querySelectorAll("select");
+  const deleteBtn = document.getElementById('delete')
+  const choices = new Choices('select',
+  {
+    searchEnabled: false,
+    removeItemButton: true,
+    itemSelectText: '',
+  });
+  for (let i = 0; i < customSelects.length; i++)
+  {
+    customSelects[i].addEventListener('addItem', function(event)
+    {
+      if (event.detail.value)
+      {
+        let parent = this.parentNode.parentNode
+        parent.classList.add('valid')
+        parent.classList.remove('invalid')
+      }
+      else
+      {
+        let parent = this.parentNode.parentNode
+        parent.classList.add('invalid')
+        parent.classList.remove('valid')
+      }
+    }, false);
+  }
+  deleteBtn.addEventListener("click", function(e)
+  {
+    e.preventDefault()
+    const deleteAll = document.querySelectorAll('.choices__button')
+    for (let i = 0; i < deleteAll.length; i++)
+    {
+      deleteAll[i].click();
+    }
+  });
+
+</script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/hackathon-main-page.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

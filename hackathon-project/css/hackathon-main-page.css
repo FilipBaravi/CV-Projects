@@ -1,0 +1,126 @@
+body{
+    background: url("https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    background: #F05837;
+}
+.nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.nav ul li a{
+    color: #fff;
+    font-size: 22px;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+}
+main h1{
+    text-align: center;
+    color: #F05837;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+}
+.main-page-search-results{
+    width: 90%;
+    display: table;
+    margin: 0 auto;
+    height: 800px;
+    margin-top: 30px;;
+}
+.main-page-search-results ul li{
+    width: 20%;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.user-info ul li{
+    display: block;
+    word-wrap: break-word;
+    font-family: 'Alata', sans-serif;
+    width: 100%;
+}
+.user-info ul li p{
+    color: #F05837;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.user-info{
+    margin-left: -15px;
+}
+
+input[type="checkbox"][id^="cb"] {
+    display: none;
+  }
+  
+  label {
+    border: none;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  :checked + label {
+    border-color: none;
+  }
+  
+  :checked + label:before {
+    content: "✓";
+    background-color: #F05837;
+    transform: scale(1);
+  }
+  
+  :checked + label #img-name-username {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #F05837;
+    z-index: -1;
+  }
+
+  .form-group .btnContact {
+    width: 30%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1%;
+    background: #F05837;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main-page-search-results ul{
+    background: #000000;
+    opacity: 0.9;
+    border-radius: 80px;
+}
